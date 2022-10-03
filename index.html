@@ -9,41 +9,8 @@
     <title>Ford Philippines</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a  class="navbar-brand" href="./index.html"><img src="Images/logo.png" id='main-logo' alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#" >Vehicles </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Fleet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Engineering</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">About Ford</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Owner</a>
-          </li>
-          <ul class="icons" style="list-style: none; display:flex; flex-direction:row;padding-top:0.5rem">
-            <li><a href="#" style="color:#003158; padding: 0 0.3rem;"><i class="fa-solid fa-arrow-right-arrow-left"></a></i></li>
-            <li><a href="./fav.html" style="color:#003158; padding: 0 0.3rem;"><i class="fa-regular fa-heart"></i></a></li>
-            <li><a href="./profile.html" style="color:#003158; padding: 0 0.3rem;"><i class="fa-solid fa-user"></i></a></li>
-            <li><a href="./carrito.html" style="color:#003158; padding: 0 0.3rem;"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg" id="nav">
 
-      </div>
-    </div>
   </nav>
   <body>
   <section class="section"> 
@@ -101,23 +68,30 @@
     <h5> See our full lineup of vehicles:</h5>
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Most Popular</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Trucks</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SUVS</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="false">Disabled</button>
+          <button class="nav-link" id="pills-performance-tab" data-bs-toggle="pill" data-bs-target="#pills-performance" type="button" role="tab" aria-controls="pills-all" aria-selected="false">Performance</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="false">All vehicles</button>
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-        <div class="tab-pane fade" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">...</div>
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"><div id="car-container-popular" class="car-container">
+        </div></div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><div  id="car-container-trucks" class="car-container">
+          
+        </div></div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0"><div id="car-container-suvs" class="car-container"></div></div>
+        <div class="tab-pane fade" id="pills-performance" role="tabpanel" aria-labelledby="pills-performance-tab" tabindex="0"><div id="car-container-performance" class="car-container"></div></div>
+        <div class="tab-pane fade" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0"><div id="car-container-all" class="car-container"></div></div>
       </div>
 </div>
 </section>
@@ -128,38 +102,18 @@
 <section class="section-2">
     <h1 class="section-title" > What's happening at Ford Philippines </h1>
     <h5>Stories, conversations and videos featuring people and the Fords they love.</h5>
+    <div><img src="./Images/car1.jpg" alt=""></div>
 </section>
 </body>
-<section class="section-3"></section>
-<section class="section-4">
-    <div class="col1">
-        <img src="../images/Logo.png" alt="">
-        <p>Somos una agencia comprometida por cumplir tus sueños</p>
-        <div class="redes">
-           <a href="https://www.facebook.com/EXPLORAVIAJESPORELMUNDO/"><i class="fa-brands fa-facebook"></i></a>
-           <a href="https://www.instagram.com/explora_viajes_por_el_mundo/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-    </div>
-
-    <div class="col2">
-        <h2>Quick Links</h2>
-        <img src="../images/Rectangle 30.png" alt="">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./contacto.html">Contactanos</a></li>
-
-        </ul>
-    </div>
-</section>
+<section id="footer"></section>
 
 
-
-
-
-<footer>©2022 Explora Viajes Por El Mundo.</footer>
-</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/2dde42dfb2.js" crossorigin="anonymous"></script>
+<script src="./scripts/script.js" type="module"></script> 
+<script src = "Modules/ModCarros.js" type="module"></script>
+<script src = "Modules/Footer.js" type="module"></script>
+
 </html>
