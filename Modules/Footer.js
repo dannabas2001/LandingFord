@@ -2,7 +2,7 @@ export const Footer= (contenedor)=>{
     contenedor.innerHTML=`
     <section class="section-4">
     <div class="col1">
-        <img src="../images/Logo.png" alt="">
+        <img src="../Images/Logo.png" alt="">
         <p>GO FURTHER</p>
         
     </div>
