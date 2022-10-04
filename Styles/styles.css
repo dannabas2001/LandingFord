@@ -32,15 +32,23 @@
     display:flex;
     flex-direction:column; 
     justify-content:center;
+    text-align: center;
     align-items:center;
     padding:2rem 0rem;
+  
+}
+.section-2 ul{
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .car-container{
     display: flex;
     flex-direction:row;
     justify-content:center;
     flex-wrap:wrap;
-    width:100%;
     margin:1rem;
 }
 .car-card{
@@ -55,10 +63,35 @@
 .section-4{
     background-color: #000011;
     display:flex;
+    flex-wrap: wrap;
     flex-direction:row; 
     color:white; 
     padding: 3rem;
 
+}
+.col1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.col2{
+    margin-left:3rem;
+    color:#749E9D;
+    text-decoration:none 
+    
+}
+.col2 ul{
+    list-style-type: none;
+    text-decoration:none 
+}
+.col2 ul li a{
+    text-decoration: none ;
+    color:#749E9D !important; 
+}
+.col2 ul li a:hover{
+    text-decoration: none ;
+    color:#286289!important; 
 }
 .section-5{
     display:flex;
@@ -67,7 +100,8 @@
     color:white;
     padding:1rem;
     align-items:center;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    width:100%;
 
 }
 .section-5 h5{
@@ -89,9 +123,51 @@
 .end-section{
     display:flex; 
     flex-direction:column;
+    width:100%;
+}
+.Vehicles{
+    background-image:url(https://www.ford.com.ph/content/ford/ph/en_ph/home/about-ford/jcr:content/par/billboard/imageComponent/image.imgs.full.high.jpg);
+    opacity:0.9;
+    color:white;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:0rem 0rem 2rem 0rem;
+    padding:2rem;
+    object-fit: cover;
+    
+}
+
+.Vehicles h1{
+    font-weight:800;
+    font-size:4rem;
+    text-align:center;
+}
+.nav-pills .nav-link.active,
+.show>.nav-pills .nav-link{
+    background: #1B394E !important
+}
+.text-description{
+    width:70%;
+    font-size:1rem;
+    color:gray;
+    text-align:center; 
+
+}
+.footer-info{
+    padding:0.5rem ;
+    margin-left:1rem;
+    color:gray;
+
 }
 @media (max-width:600px){
     #main-logo{
         width:50%;
     }
+    .col2{
+        margin-left:1rem;
+    }
 }
+
